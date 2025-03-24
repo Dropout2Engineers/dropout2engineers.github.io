@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Video Library</title>
+</head>
+<body>
+  <h1>Video Library</h1>
+  <a href="/upload">Upload Another Video</a>
+  <div>
+    <% if (videos.length === 0) { %>
+      <p>No videos available.</p>
+    <% } else { %>
+      <% videos.forEach(video => { %>
+        <video width="320" height="240" controls>
+          <source src="/uploads/<%= video %>" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      <% }) %>
+    <% } %>
+  </div>
+</body>
+</html>
