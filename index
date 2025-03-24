@@ -1,0 +1,11 @@
+video-upload-website/
+├── public/
+│   ├── index.html
+│   ├── upload.html
+│   ├── videos.html
+│   ├── style.css
+│   └── script.js
+├── uploads/ (Uploaded videos will be stored here)
+├── server.js
+├── package.json
+└── views/
